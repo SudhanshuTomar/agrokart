@@ -19,8 +19,8 @@ export default function NavBar() {
                 </li>
                 
             </ul>
-            <button class="btn btn-outline-primary me-1" href="#">Sign up</button>
-            <button class="btn btn-outline-primary" href="#">Login</button>
+            <button class="btn btn-outline-primary me-1" href="Signup">Sign up</button>
+            <button class="btn btn-outline-primary" href="Login">Login</button>
             </div>
         </div>
         </nav>
