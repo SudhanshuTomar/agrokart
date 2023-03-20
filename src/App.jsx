@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
-import SideBar from "./components/SideBar";
+import SideBar from "./components/Sidebar";
 import ResponsiveAppBar from "./components/Navbar.jsx";
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" exact index element={<Home />} />
             <Route path="/about" exact index element={<About />} />
+            <Route path="/home" exact index element={<Home />} />
             <Route path="/login" exact index element={<Login />} />
             <Route path="/signup" exact index element={<Signup />} />
             <Route

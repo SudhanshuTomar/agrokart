@@ -13,6 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { useNavigate } from "react-router-dom";
+import Home from "../pages/Home.jsx";
+import About from "../pages/About.jsx";
 
 const pages = ["Home", "About"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -46,7 +48,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            onClick={() => navigate("/", { replace: true })}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -101,7 +103,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            onClick={() => navigate("/", { replace: true })}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -113,7 +115,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            AgroKart
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -122,7 +124,9 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <div onClick={() => navigate("/" + page.toLowerCase(), { replace: true })}>
+                  {page}
+                </div>
               </Button>
             ))}
           </Box>
@@ -135,8 +139,10 @@ function ResponsiveAppBar() {
             </Button>
             <Button
               onClick={() => navigate("/signup", { replace: true })}
-
-            variant="contained">Signup</Button>
+              variant="contained"
+            >
+              Signup
+            </Button>
           </Box>
 
           {/* <Box sx={{ flexGrow: 0 }}>

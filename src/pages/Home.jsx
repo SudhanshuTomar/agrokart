@@ -1,10 +1,11 @@
 import React from "react";
-// import Carousel from "../components/Carousel";
+import Dashboard from "./Dashboard";
+import Sidebar from "../components/Sidebar";
 const Home = () => {
   return (
-    <div className="home page" id="home">
-      Home
-      {/* <Carousel /> */}
+    <div className="home" id="home">
+      <Sidebar />
+      <Dashboard />
     </div>
   );
 };
