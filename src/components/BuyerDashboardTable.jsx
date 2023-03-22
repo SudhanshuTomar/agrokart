@@ -11,7 +11,7 @@ const BuyerDashboardTable = () => {
         variant="contained"
         color="primary"
         size="small"
-        style={{ marginLeft: 16 }}
+        sx={{ minWidth: 40 }}
       >
         <DeleteIcon />
       </Button>
@@ -23,7 +23,7 @@ const BuyerDashboardTable = () => {
         variant="contained"
         color="primary"
         size="small"
-        style={{ marginLeft: 16 }}
+        sx={{ minWidth: 40 }}
       >
         <EditIcon />
       </Button>
