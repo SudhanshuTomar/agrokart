@@ -36,19 +36,16 @@ const BuyerDashboardTable = () => {
       field: "query",
       headerName: "Crop Name",
       flex: 1,
-      editable: true,
     },
     {
       field: "quantity",
       headerName: "Quantity",
       flex: 1,
-      editable: true,
     },
     {
       field: "rate",
       headerName: "Rate",
-      flex: 1,
-      editable: true,
+      flex: 1.25,
     },
     {
       field: "edit-order",
