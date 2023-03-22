@@ -1,13 +1,13 @@
 import React from "react";
-import BuyerDashboard from "./BuyerDashboard";
+// import SellerDashboard from "./SellerDashboard";
 import Sidebar from "../components/Sidebar";
-const Home = () => {
+const SellerHome = () => {
   return (
     <div className="home" id="home">
       <Sidebar />
-      <BuyerDashboard />
+      {/* <SellerDashboard /> */}
     </div>
   );
 };
 
-export default Home;
+export default SellerHome;

@@ -1,7 +1,7 @@
 import React from "react";
 import BuyerDashboard from "./BuyerDashboard";
 import Sidebar from "../components/Sidebar";
-const Home = () => {
+const BuyerHome = () => {
   return (
     <div className="home" id="home">
       <Sidebar />
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default BuyerHome;

@@ -3,9 +3,12 @@ import "./App.css";
 // import Carousel from "./components/Carousel";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
+import BuyerHome from "./pages/BuyerHome";
+import SellerHome from "./pages/SellerHome";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Dashboard from "./pages/Dashboard";
+import SellerDashboard from "./pages/SellerDashboard";
+import BuyerDashboard from "./pages/BuyerDashboard";
 import About from "./pages/About";
 import SideBar from "./components/Sidebar";
 import ResponsiveAppBar from "./components/Navbar.jsx";
@@ -20,21 +23,23 @@ function App() {
           {/* <SideBar /> */}
           <Routes>
             <Route path="/" exact index element={<Home />} />
-            <Route path="/about" exact index element={<About />} />
             <Route path="/home" exact index element={<Home />} />
+            <Route path="/about" exact index element={<About />} />
+            <Route path="/seller/home" exact index element={<SellerHome />} />
+            <Route path="/buyer/home" exact index element={<BuyerHome />} />
             <Route path="/login" exact index element={<Login />} />
             <Route path="/signup" exact index element={<Signup />} />
             <Route
               path="/buyer/:username"
               exact
               index
-              element={<Dashboard />}
+              element={<BuyerDashboard />}
             />
             <Route
               path="/seller/:username"
               exact
               index
-              element={<Dashboard />}
+              element={<SellerDashboard />}
             />
           </Routes>
         </div>
