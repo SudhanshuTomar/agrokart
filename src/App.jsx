@@ -10,7 +10,7 @@ import Signup from "./pages/Signup";
 import SellerDashboard from "./pages/SellerDashboard";
 import BuyerDashboard from "./pages/BuyerDashboard";
 import About from "./pages/About";
-import SideBar from "./components/Sidebar";
+// import SideBar from "./components/Sidebar";
 import ResponsiveAppBar from "./components/Navbar.jsx";
 
 function App() {
