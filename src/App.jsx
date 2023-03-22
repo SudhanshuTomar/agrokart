@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import BuyerHome from "./pages/BuyerHome";
 import SellerHome from "./pages/SellerHome";
-import Login from "./pages/Login";
+import Login from "./pages/Signin";
 import Signup from "./pages/Signup";
 import SellerDashboard from "./pages/SellerDashboard";
 import BuyerDashboard from "./pages/BuyerDashboard";

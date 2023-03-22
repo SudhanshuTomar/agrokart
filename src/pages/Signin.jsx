@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import Copyright from "../components/Copyright";
+import { MenuItem } from "@mui/material";
 
 const theme = createTheme();
 
@@ -74,6 +75,21 @@ export default function SignInSide() {
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
             >
+              <TextField
+                required
+                fullWidth
+                select
+                id="signinas"
+                label="Sign in as"
+                name="signinas"
+              >
+                <MenuItem key={1} value={1}>
+                  Buyer
+                </MenuItem>
+                <MenuItem key={2} value={2}>
+                  Seller
+                </MenuItem>
+              </TextField>
               <TextField
                 margin="normal"
                 required

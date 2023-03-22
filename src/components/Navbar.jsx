@@ -135,13 +135,13 @@ function ResponsiveAppBar() {
               onClick={() => navigate("/login", { replace: true })}
               variant="contained"
             >
-              Login
+              Sign in
             </Button>
             <Button
               onClick={() => navigate("/signup", { replace: true })}
               variant="contained"
             >
-              Signup
+              Sign up
             </Button>
           </Box>
 
